@@ -1,0 +1,707 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="TabsApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aequalis Software Solutions Pvt Ltd | Aequalis</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="Aequalis is comprised of very talented individuals who are passionate about building quality software applications.">
+
+<meta name="keywords" content="Aequalis, Enterprise Web Apps, Semantic Web Applications, Corporate Training, Intelligent Agents, software company in chennai, Professional JAVA Training, Software development company in Chennai,Software development company, Software development, Best company for JAVA, Mobile apps development, Java development,
+        Best Java Company in Chennai, Java Applications, Intelligent Agents Development, Data-centric solutions, IT company in Chennai, Software development company in Velachery, Java Training, semantic solutions training, mysql training, hadoop training,Aequalis Software, Aequalis Software Company, Aequalis in Chennai, No 1 Software Company in Chennai, Aequalisys. com , Top 10 Software Solutions in Chennai, Company for Semantic Technology in Chennai, Responsive Web Design Company in Chennai, Php Applications in Chennai, Php Solutions">
+    <!-- Place favicon.ico in the root directory -->
+ <link rel="shortcut icon" href="favicon.ico">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/animate.css" >
+    <link rel="stylesheet" href="styles/owl.carousel.css" >
+    <link rel="stylesheet" href="styles/owl.transitions.css" >
+    <link rel="stylesheet" href="styles/prettyPhoto.css" >
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+	 <script src="scripts/jquery.js"></script>
+	<!-- 	 Angular.js-->
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+ <script src="scripts/app.js"></script>
+ <script src="scripts/email.js"></script>
+    <!-- endbuild -->
+  <script>
+
+$(window).scroll(function() {
+
+
+
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $("#header").addClass("scroll");
+    }
+	 else {
+             $("#header").removeClass("scroll");
+        }
+});
+</script>
+</head>
+<body id="home" class="homepage">
+<!-- Page-->
+<div class="page text-center" ng-controller="TabsCtrl as tabs">
+    <!-- Page Header-->
+    <header id="header" class="navbar-fixed-top">
+	<nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index-2.html"><img src="images/logo1.png" alt="logo" style="width: 65px;height: 49px;"></a>
+			</div>
+			<div class="navbar-collapse navbar-right collapse in" aria-expanded="true">
+					<ul class="nav navbar-nav">
+						 <li class=" "><a href="#home">Home</a></li>
+                                    <li class=""><a href="#about">About</a></li>
+                                    <li class=""><a href="#portfolio">Portfolio</a></li>
+                                    <li class=""><a href="#blog">Carrers</a></li>
+                                    <li class=""><a href="#get-in-touch">Contact</a></li>
+					</ul>
+			</div>
+		</div>
+</nav>
+	<div class="shell">
+		<div class="col-sm-4">
+			<div class="navbar-brand"><a href="index.html"><img ng-src="{{myVar}}" ng-init="myVar = 'images/logo1.png'"style="width: 65px;height: 49px"></a>
+             </div>
+		</div>
+		<div class="col-sm-8">
+			<ul class="offset-lg-top-15 list-unstyled">
+                                        <li class="reveal-md-inline-block"><span
+                                                class="fa fa-envelope-o text-middle icon-primary"></span><a
+                                                href="mailto:info@aequalisys.com" class="inset-left-10 text-middle">info@aequalisys.com</a>
+                                        </li>
+                                        <li class="reveal-md-inline-block">&nbsp;
+                                            </li>
+                                        <li class="reveal-md-inline-block"><span
+                                                class="fa fa-phone text-middle icon-primary"></span><a href="callto:#"
+                                                                                                       class="inset-left-10 text-middle">044
+                                            - 22591779</a></li>
+                                    </ul>
+		 <div class="navbar-menu-wrap">
+			<ul class="navbar-nav">
+
+           <li class=""  ng-class="{ active:tabs.isSelected(1) }">
+			<a href ng-click="tabs.selectTab('main-slider')">Home</a>
+		   </li>
+            <li class="" ng-class="{ active:tabs.isSelected(2) }">
+			  <a href ng-click="tabs.selectTab('about')">About</a>
+			</li>
+            <li class="" ng-class="{ active:tabs.isSelected(3) }">
+			  <a href ng-click="tabs.selectTab('portfolio')">Portfolio</a>
+			</li>
+            <li class="" ng-class="{ active:tabs.isSelected(4) }">
+			  <a href ng-click="tabs.selectTab('blog')">Carrers</a>
+			</li>
+            <li class="" ng-class="{ active:tabs.isSelected(5) }">
+			 <a href ng-click="tabs.selectTab('get-in-touch')">Contact</a>
+			</li>
+         </ul>
+		 </div>
+		</div>
+		</div>
+	</header>
+    <section id="main-slider">
+        <div class="owl-carousel">
+		<div class="item" style="background-image: url(images/slider/mediakit.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6" style="margin-top:5%">
+                                <div class="carousel-content ">
+                                    <h2>Cloud  Enterprise <span>Web </span>apps</h2>
+									<div style="margin-top:15%">
+									<img ng-src="{{myVar6}}" ng-init="myVar6 = 'images/slider/icon11.png'">
+				  <img ng-src="{{myVar5}}" ng-init="myVar5 = 'images/slider/icon8.png'">
+				  <img ng-src="{{myVar1}}" ng-init="myVar1 = 'images/slider/icon6.png'">
+				  <img ng-src="{{myVar2}}" ng-init="myVar2 = 'images/slider/icon7.png'">
+				  <img ng-src="{{myVar3}}" ng-init="myVar3 = 'images/slider/icon4.png'">
+				  <img ng-src="{{myVar4}}" ng-init="myVar4 = 'images/slider/icon10.png'">
+									</div>
+									<div>
+									<img ng-src="{{mySlide}}" ng-init="mySlide = 'images/slider/icon5.png'">
+				  <img ng-src="{{mySlide1}}" ng-init="mySlide1 = 'images/slider/icon1.png'">
+				  <img ng-src="{{mySlide2}}" ng-init="mySlide2 = 'images/slider/icon17.png'">
+				  <img ng-src="{{mySlide3}}" ng-init="mySlide3 = 'images/slider/icon18.png'">
+				  <img ng-src="{{mySlide4}}" ng-init="mySlide4 = 'images/slider/icon1.png'">
+				  <img ng-src="{{mySlide5}}" ng-init="mySlide5 = 'images/slider/icon15.png'">
+									</div>
+                                </div>
+                            </div>
+							<div class="col-sm-6" style="margin-top:20%">
+							<img ng-src="{{mySlider}}" ng-init="mySlider = 'images/slider/slide-img-1.png'" style="width:80%">
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="item" style="background-image: url(images/slider/mediakit.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6" style="margin-top:5%">
+                                <div class="carousel-content ">
+                                    <h2><span>Semantic</span> Web Solutions</h2>
+									<div style="margin-top:13%">
+									<img ng-src="{{mySlider1}}" ng-init="mySlider1 = 'images/slider/icon12.png'">
+									<img ng-src="{{mySlider2}}" ng-init="mySlider2 = 'images/slider/icon13.png'">
+									<img ng-src="{{mySlider3}}" ng-init="mySlider3 = 'images/slider/16.png'">
+									</div>
+									<div>
+									<img ng-src="{{mySlider4}}" ng-init="mySlider4 = 'images/slider/17.png'">
+									<img ng-src="{{mySlider5}}" ng-init="mySlider5 = 'images/slider/18.png'">
+									<img ng-src="{{mySlider6}}" ng-init="mySlider6 = 'images/slider/19.png'">
+									<img ng-src="{{mySlider7}}" ng-init="mySlider7 = 'images/slider/20.png'">
+									</div>
+                                </div>
+                            </div>
+							<div class="col-sm-6" style="margin-top:16%">
+							<img src="images/slider/semantic-web-90-days.png" width="90%">
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="item" style="background-image: url(images/slider/mediakit.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6" style="margin-top:8%">
+                                <div class="carousel-content">
+                                    <h2>Business <span>Mobile</span> Apps</h2>
+									<div style="margin-top:10%">
+									<img ng-src="{{myNewlider}}"  ng-init="myNewlider = 'images/slider/icon3.png'">
+									<img ng-src="{{myNewlider1}}" ng-init="myNewlider1 = 'images/slider/icon16.png'">
+									<img ng-src="{{myNewlider2}}" ng-init="myNewlider2 = 'images/slider/icon19.png'">
+									<img ng-src="{{myNewlider3}}" ng-init="myNewlider3 = 'images/slider/icon20.png'">
+									<img ng-src="{{myNewlider4}}" ng-init="myNewlider4 = 'images/slider/icon21.png'">
+									<img ng-src="{{myNewlider5}}" ng-init="myNewlider5 = 'images/slider/icon22.png'">
+
+								   </div>
+                                </div>
+                            </div>
+							<div class="col-sm-6" style="margin-top:15%">
+							<img ng-src="{{myNewlider6}}" ng-init="myNewlider6 ='images/slider/mobile-app1.png'">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" ng-app="myApp" ng-controller="TabsCtrl">{{experience}}</h2>
+                <p class="text-center wow fadeInDown"> <div ng-app="myApp" ng-controller="TabsCtrl">
+				<p>{{firstname}}</p>
+				</div></p>
+            </div>
+            <div class="row" style="text-align:left">
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"
+                     style="visibility: visible; animation-duration: 300ms; animation-delay: 0ms;">
+                    <div class="media service-box">
+                        <div class="pull-left">
+                            <i class="fa fa-hand-o-right"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" ng-app="myApp" ng-controller="TabsCtrl">Approach</h4>
+                            <p> {{technologies}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"
+                     style="visibility: visible; animation-duration: 300ms; animation-delay: 0ms;">
+                    <div class="media service-box">
+                        <div class="pull-left">
+                            <i class="fa fa-group"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" ng-app="myApp" ng-controller="TabsCtrl">Customer</h4>
+                            <p>{{enterprises}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"
+                     style="visibility: visible; animation-duration: 300ms; animation-delay: 0ms;">
+                    <div class="media service-box">
+                        <div class="pull-left">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading" ng-app="myApp" ng-controller="TabsCtrl">Benefit</h4>
+                            <p>{{opportunities}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+    </section>
+		<section id="work-process">
+		<div class="container">
+			<div class="row">
+			<div  class="carousel-content" ng-app="myApp" ng-controller="TabsCtrl">
+				<h2><span>Web</span>Application Development</h2>
+				<p> {{deliver}}</p>
+				<img ng-src="{{myBaner}}" ng-init="myBaner = 'images/banner2.png'">
+				</div>
+			</div>
+		</div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="section-header ">
+                <h2 class="section-title text-center wow fadeInDown">{{us}}</h2>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <div class="row" style="text-align:left">
+                <div class="col-sm-4 wow fadeInRight"  ng-app="myApp" ng-controller="TabsCtrl">
+                    <h3 class="column-title">{{company}}</h3>
+                    <p>{{services}}</p>
+                    <h3 class="column-title">{{mission}}</h3>
+                    <p>{{technology}}</p>
+                </div>
+                <div class="col-sm-8 wow fadeInLeft">
+                    <h3 class="column-title">{{technologys}}</h3>
+                    <div class="features">
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-line-chart"></i>
+                                </div>
+                                <div class="media-body" ng-app="myApp" ng-controller="TabsCtrl">
+                                    <h4 class="media-heading">{{app}}</h4>
+                                    <p>{{develop}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-cubes"></i>
+                                </div>
+                                <div class="media-body" ng-app="myApp" ng-controller="TabsCtrl">
+                                    <h4 class="media-heading">{{web}}</h4>
+                                    <p>{{semantic}}.</p>
+                                </div>
+                            </div>
+                        </div>
+						<div class="clearfix">&nbsp;</div>
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-pie-chart"></i>
+                                </div>
+                                <div class="media-body" ng-app="myApp" ng-controller="TabsCtrl">
+                                    <h4 class="media-heading">{{mobile}}</h4>
+                                    <p>{{mobiles}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-cloud"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading" ng-app="myApp" ng-controller="TabsCtrl">{{erp}}</h4>
+                                    <p>{{provide}}</p>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <div class="media-body" ng-app="myApp" ng-controller="TabsCtrl">
+                                    <h4 class="media-heading">{{design}}</h4>
+                                    <p>{{devices}}</p>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                            <div class="media service-box">
+                                <div class="pull-left">
+                                    <i class="fa fa-bar-chart"></i>
+                                </div>
+                                <div class="media-body" ng-app="myApp" ng-controller="TabsCtrl">
+                                    <h4 class="media-heading">{{force}}</h4>
+                                    <p>{{sales}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section id="animated-number">
+        <div class="container">
+            <div class="row text-center">
+			<div class="col-sm-8">
+			<div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown" ng-app="myApp" ng-controller="TabsCtrl">{{why}}</h2>
+            </div>
+                <div class="col-sm-4 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="animated-number" data-digit="6+" data-duration="1000"></div>
+                        <strong>{{year}}</strong>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="animated-number" data-digit="99%" data-duration="1000"></div>
+                        <strong>{{accurate}}</strong>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-6" >
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="animated-number" data-digit="50+" data-duration="1000"></div>
+                        <strong>{{worldwide}}</strong>
+                    </div>
+                </div>
+				</div>
+                <div class="col-sm-4 col-xs-6" style="margin-top: 3%;">
+                   <strong>{{java}}</strong>
+					<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" data-width="85">85%</div>
+					</div>
+					<strong>{{development}}</strong>
+					<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" data-width="70">70%</div>
+					</div>
+					<strong>{{apps}}</strong>
+					<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" data-width="90">90%</div>
+					</div>
+					<strong>{{products}}</strong>
+					<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" data-width="65">65%</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">{{oru}}</h2>
+
+            </div>
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">{{group}}</a></li>
+                    <li><a href="#" data-filter=".creative">{{groups}}</a></li>
+                    <li><a href="#" data-filter=".corporate">{{cloud}}</a></li>
+                    <li><a href="#" data-filter=".portfolio">{{clouds}}</a></li>
+                </ul>
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-item creative">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPort}}" ng-init="myPort = 'images/portfolio/symphion2.png'" class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>{{symphion}}</h3>
+                            <a class="preview" href="images/portfolio/Executive-Summary-3.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item portfolio">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPort1}}" ng-init="myPort1 ='images/portfolio/icampus.png'" class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>{{automation}}</h3>
+                         <a class="preview" href="images/portfolio/icampus1.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item creative">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPort2}}" ng-init="myPort2 ='images/portfolio/pro2.png'" class="img-responsive">
+                           <div class="portfolio-info">
+                            <h3>{{tone}}</h3>
+                            <a class="preview" href="images/portfolio/pro1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myCymbio}}" ng-init="myCymbio ='images/portfolio/cymbio2.png'"  class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>{{cymbio}}</h3>
+                          <a class="preview" href="images/portfolio/cymbio.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item creative ">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPort4}}" ng-init="myPort4 ='images/portfolio/cw.png'" class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>CW</h3>
+                            <a class="preview" href="images/portfolio/cw1.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+				<img ng-src="{{myPort5}}" ng-init="myPort5 ='images/portfolio/denir2.png'" class="img-responsive">
+
+                         <div class="portfolio-info">
+                            <h3>{{broide}}</h3>
+                            <a class="preview" href="images/portfolio/denir.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item creative ">
+                    <div class="portfolio-item-inner">
+			<img ng-src="{{myPort6}}" ng-init="myPort6 ='images/portfolio/game2.png'" class="img-responsive">
+
+                          <div class="portfolio-info">
+                            <h3>{{game}}</h3>
+                            <a class="preview" href="images/portfolio/game.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item portfolio">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPort7}}" ng-init="myPort7 ='images/portfolio/odoo.png'" class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>{{management}}</h3>
+                            <a class="preview" href="images/portfolio/odoo1.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+						<img ng-src="{{myPort8}}" ng-init="myPort8='images/portfolio/studenteam.png'" class="img-responsive">
+                     <div class="portfolio-info">
+                            <h3>{{students}}</h3>
+
+                            <a class="preview" href="images/portfolio/studentteam2.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+
+ 					<img ng-src="{{myPort9}}" ng-init="myPort9='images/portfolio/maths2.png'" class="img-responsive">
+                         <div class="portfolio-info">
+                            <h3>{{student}}</h3>
+                            <a class="preview" href="images/portfolio/maths.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+				<img ng-src="{{myPorts}}" ng-init="myPorts ='images/portfolio/leader2.png'" class="img-responsive">
+
+                        <div class="portfolio-info">
+                            <h3>{{ports}}</h3>
+
+                            <a class="preview" href="images/portfolio/sleaders.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+				<div class="portfolio-item corporate">
+                    <div class="portfolio-item-inner">
+					<img ng-src="{{myPorts1}}" ng-init="myPorts1 ='images/portfolio/socure2.png'" class="img-responsive">
+                        <div class="portfolio-info">
+                            <h3>{{ports}}</h3>
+                            <a class="preview" href="images/portfolio/socure.png" rel="prettyPhoto"><i
+                                    class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonial">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+							<p><img ng-src="{{myCircle}}" ng-init="myCircle ='images/testimonial/01.jpg'" class="img-circle img-thumbnail"></p>
+                                <h4>{{avi}}</h4>
+                                <small>{{founder}}</small>
+                                <p>{{pleasure}}</p>
+                            </div>
+                            <div class="item">
+							<p><img ng-src="{{myCircle1}}" ng-init="myCircle1 ='images/testimonial/01.jpg'" class="img-circle img-thumbnail"></p>
+                                <h4>{{noble}}</h4>
+                                <small>{{professor}}</small>
+                                <p>{{retailer}}</p>
+                            </div>
+							<div class="item">
+							<p><img ng-src="{{myCircle2}}" ng-init="myCircle2 ='images/testimonial/01.jpg'" class="img-circle img-thumbnail"></p>
+
+                                <h4>{{gal}}</h4>
+                                <small>{{team}}</small>
+                                <p>{{worked}}</p>
+                            </div>
+                        </div>
+                        <div class="btns">
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button"
+                               data-slide="prev">
+                                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                <span class="sr-only">{{one}}</span>
+                            </a>
+                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button"
+                               data-slide="next">
+                                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                <span class="sr-only">{{two}}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">{{join}}</h2>
+                <p class="text-center wow fadeInDown">{{joining}}</p>
+            </div>
+            <div class="row">
+			<div class="col-sm-4">
+				<div style="margin:15% 0 0 21%"><img ng-src="{{myJoin2}}" ng-init="myJoin2 ='images/about.png'"></div>
+			</div>
+			<div class="col-sm-1">&nbsp;</div>
+			<div class="col-sm-7">
+				<h3 class="column-title">{{required}}</h3>
+					<ul style="text-align:left">
+					<li>{{years}} </li>
+					<li>{{actors}}</li>
+					<li> {{patterns}}</span> </li>
+					<li>{{concurrency}}</li>
+					<li>{{excellent}}</li>
+					<li>{{sbt}}</li>
+					<li>{{source}}</li>
+					<li>{{learner}}</li>
+				  </ul>
+            </div>
+		</div>
+		<p>{{phenomenal}}</p>
+    </section>
+    <section id="get-in-touch">
+        <section id="contact" ng-app="myApp" ng-controller="TabsCtrl">
+            <div id="google-map" style="height:500px" data-latitude="52.365629" data-longitude="4.871331"></div>
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title text-center wow fadeInDown">{{get}}</h2>
+                        <p class="text-center wow fadeInDown" style="color:#fff;">{{happy}}</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="contact-form">
+                              <form id="main-contact-form" name="contactForm" method="post">
+                                <div class="row">
+                                  <div class="form-group col-sm-4">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" ng-model="firstName"  required>
+                                  </div>
+                                  <div class="form-group col-sm-4">
+                                    <input class="form-control" id="email" placeholder="Email" ng-model="email" class="form-control" required>
+                                  </div>
+                                  <div class="form-group col-sm-4">
+                                    <input type="text" name="subject" class="form-control" ng-model="subject" placeholder="Subject" required>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <textarea name="message" class="form-control" rows="6" placeholder="Message" ng-model="message" required></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary" ng-click="saveData(contactForm)" >Send Message</button>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="footer" ng-app="myApp" ng-controller="TabsCtrl">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 company-details">
+                    <div class="footer-icon"><img src="images/map25-redish.png" alt=""></div>
+                    <address>
+                        <strong>{{software}}</strong><br>
+                       {{plot}}<br>{{cross}}
+                       <br>{{rode}}<br>{{rode1}}
+                       
+                    </address>
+                </div>
+                <div class="col-md-3 company-details">
+                    <div class="footer-icon"><img src="images/envelope4-green.png" alt=""></div>
+                    <p>{{aeq}}<br>{{hr}}</p>
+                </div>
+                <div class="col-md-3 company-details">
+                    <div class="footer-icon"><img src="images/telephone65-blue.png" alt=""></div>
+                    <p>{{num}}</p>
+                </div>
+                <div class="col-md-3 copyright">
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/Aequalis-Software-Solutions-462682603914862"><i
+                                class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/Aequalisys"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/102307855865480697127"><i
+                                class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.skype.com/en/business/"><i class="fa fa-skype"></i></a></li>
+                        <li><a href="https://www.pinterest.com/aequalissoftwar/"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/aequalis-software-solutions-a894b4109?trk=nav_responsive_tab_profile_pic"><i
+                                    class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                    <p>{{soft}}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/mousescroll.js"></script>
+    <script src="scripts/smoothscroll.js"></script>
+    <script src="scripts/jquery.prettyPhoto.js"></script>
+    <script src="scripts/jquery.isotope.min.js"></script>
+    <script src="scripts/jquery.inview.min.js"></script>
+    <script src="scripts/wow.min.js"></script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>
