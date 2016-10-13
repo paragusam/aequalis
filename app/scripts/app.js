@@ -14,7 +14,7 @@
 			  to: $scope.email,
 			  subject: $scope.subject,
 			  text: $scope.message,
-			  from:"maga.webdesign234@gmail.com"
+        from:"maga.webdesign234@gmail.com"
 			}
 			var req = {
 			  method : 'POST',

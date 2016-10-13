@@ -53,6 +53,12 @@ $(window).scroll(function() {
         }
 });
 </script>
+    <!-- start Mixpanel -->
+    <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+    0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("c3b53afe6eb9ec1b8e63bd357c38d065");</script>
+    <!-- end Mixpanel -->
 </head>
 <body id="home" class="homepage">
 <!-- Page-->
@@ -460,25 +466,22 @@ $(window).scroll(function() {
 					<img ng-src="{{myPort4}}" ng-init="myPort4 ='images/portfolio/cw.png'" class="img-responsive">
                         <div class="portfolio-info">
                             <h3>CW</h3>
-                            <a class="preview" href="images/portfolio/cw1.png" rel="prettyPhoto"><i
-                                    class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/cw1.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item corporate">
                     <div class="portfolio-item-inner">
 				<img ng-src="{{myPort5}}" ng-init="myPort5 ='images/portfolio/denir2.png'" class="img-responsive">
-
                          <div class="portfolio-info">
                             <h3>{{broide}}</h3>
-                            <a class="preview" href="images/portfolio/denir.png" rel="prettyPhoto"><i
-                                    class="fa fa-eye"></i></a>
-                        </div>
+                <a class="preview" href="images/portfolio/denir.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                       </div>
                     </div>
                 </div>
                 <div class="portfolio-item creative ">
                     <div class="portfolio-item-inner">
-			<img ng-src="{{myPort6}}" ng-init="myPort6 ='images/portfolio/game2.png'" class="img-responsive">
+				<img ng-src="{{myPort6}}" ng-init="myPort6 ='images/portfolio/game2.png'" class="img-responsive">
 
                           <div class="portfolio-info">
                             <h3>{{game}}</h3>
@@ -492,8 +495,8 @@ $(window).scroll(function() {
 					<img ng-src="{{myPort7}}" ng-init="myPort7 ='images/portfolio/odoo.png'" class="img-responsive">
                         <div class="portfolio-info">
                             <h3>{{management}}</h3>
-                            <a class="preview" href="images/portfolio/odoo1.png" rel="prettyPhoto"><i
-                                    class="fa fa-eye"></i></a>
+                            <a class="preview" href="images/portfolio/odoo1.png" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -502,7 +505,6 @@ $(window).scroll(function() {
 						<img ng-src="{{myPort8}}" ng-init="myPort8='images/portfolio/studenteam.png'" class="img-responsive">
                      <div class="portfolio-info">
                             <h3>{{students}}</h3>
-
                             <a class="preview" href="images/portfolio/studentteam2.png" rel="prettyPhoto"><i
                                     class="fa fa-eye"></i></a>
                         </div>
@@ -510,7 +512,6 @@ $(window).scroll(function() {
                 </div>
 				<div class="portfolio-item corporate">
                     <div class="portfolio-item-inner">
-
  					<img ng-src="{{myPort9}}" ng-init="myPort9='images/portfolio/maths2.png'" class="img-responsive">
                          <div class="portfolio-info">
                             <h3>{{student}}</h3>
@@ -522,10 +523,8 @@ $(window).scroll(function() {
 				<div class="portfolio-item corporate">
                     <div class="portfolio-item-inner">
 				<img ng-src="{{myPorts}}" ng-init="myPorts ='images/portfolio/leader2.png'" class="img-responsive">
-
                         <div class="portfolio-info">
                             <h3>{{ports}}</h3>
-
                             <a class="preview" href="images/portfolio/sleaders.png" rel="prettyPhoto"><i
                                     class="fa fa-eye"></i></a>
                         </div>
@@ -564,7 +563,6 @@ $(window).scroll(function() {
                             </div>
 							<div class="item">
 							<p><img ng-src="{{myCircle2}}" ng-init="myCircle2 ='images/testimonial/01.jpg'" class="img-circle img-thumbnail"></p>
-
                                 <h4>{{gal}}</h4>
                                 <small>{{team}}</small>
                                 <p>{{worked}}</p>
@@ -658,7 +656,7 @@ $(window).scroll(function() {
                         <strong>{{software}}</strong><br>
                        {{plot}}<br>{{cross}}
                        <br>{{rode}}<br>{{rode1}}
-                       
+
                     </address>
                 </div>
                 <div class="col-md-3 company-details">
